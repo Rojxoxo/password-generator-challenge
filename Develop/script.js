@@ -1,4 +1,10 @@
 // Assignment code here
+ const passOptions = {
+  lower: "abcdefghijklmnopqrstuvwxyz",
+  upper: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  number: "12345667890"
+ };
+
 
 
 // Get references to the #generate element
