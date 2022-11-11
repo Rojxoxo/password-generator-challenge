@@ -10,6 +10,8 @@ This site can be used to randomly generate a password
 
 ## link to finished product
 
+https://rojxoxo.github.io/password-generator-challenge/
+
 ## screenshots
 
 ![ScreenShot](Develop\Screenshot-(4).png)
