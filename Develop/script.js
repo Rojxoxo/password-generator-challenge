@@ -38,8 +38,14 @@ function genPassword() {
       window.alert("Need to select at least 1 option, please try again.");
       return genPassword();
     };
-    console.log(passInfo)
-    console.log(passChars)
+    // console.log(passInfo)
+    // console.log(passChars)
+    let randomPass = " ";
+    for (var i = 0; i < characterNumber; i++) {
+      randomPass += passInfo[Math.floor(Math.random() * passInfo.length)];
+    };
+    console.log(randomPass)
+
   } 
   else {
     window.alert("Please provide a valid length");
