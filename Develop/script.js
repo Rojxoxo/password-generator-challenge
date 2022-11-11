@@ -58,16 +58,16 @@ function genPassword() {
 
 
 // Write password to the #password input
-function writePassword() {
+// function writePassword() {
 
-  var passwordText = document.querySelector("#password");
+//   var passwordText = document.querySelector("#password");
 
-  passwordText.value = randomPass;
+//   passwordText.value = randomPass;
 
-}
+// }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword); 
+// generateBtn.addEventListener("click", writePassword); 
 generateBtn.addEventListener("click", genPassword);
 
 function getRandomChar(fromString){
