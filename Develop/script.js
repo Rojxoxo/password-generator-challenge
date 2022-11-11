@@ -22,29 +22,32 @@ function genPassword() {
     let getLower = window.confirm("Include lowercase characters?");
     if (getLower) {
       passInfo += passOptions.lower;
-      passChars.push(getRandomChar(passOptions.lower));
     };
+    // include uppercase
     let getUpper = window.confirm("Include uppercase letters?");
     if (getUpper) {
       passInfo += passOptions.upper;
-      passChars.push(getRandomChar(passOptions.upper));
     };
+    // include numbers
     let getNumber = window.confirm("Include numbers?");
     if (getNumber) {
       passInfo += passOptions.number;
-      passChars.push(getRandomChar(passOptions.number));
     };
+    // returns to beginning if no options are selected
     if (!passInfo) {
       window.alert("Need to select at least 1 option, please try again.");
       return genPassword();
     };
-    // console.log(passInfo)
-    // console.log(passChars)
+    // generates random password
     let randomPass = " ";
     for (var i = 0; i < characterNumber; i++) {
       randomPass += passInfo[Math.floor(Math.random() * passInfo.length)];
     };
     console.log(randomPass)
+    // shows alert with randomly generated password
+    if (randomPass) (
+      window.alert("Here is the randomly generated password:\n" + randomPass)
+    )
 
   } 
   else {
@@ -56,10 +59,10 @@ function genPassword() {
 
 // Write password to the #password input
 function writePassword() {
-  // var password = generatePassword();
+
   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+  passwordText.value = randomPass;
 
 }
 
